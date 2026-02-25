@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Pro v2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="pixel-font">POKE API</h1>
+        <div class="search-bar">
+            <input type="text" id="pokemon-search" placeholder="Buscar Pokémon por nombre o ID...">
+        </div>
+    </header>
+
+    <main class="app-container">
+        <section id="details-panel" class="details-section">
+            <div id="active-pokemon" class="details-content">
+                <h2 class="pixel-font">Selecciona un Pokémon</h2>
+                <p>Haz clic en una tarjeta para ver sus estadísticas completas</p>
+            </div>
+        </section>
+
+        <section id="list-section" class="list-section">
+            <div id="pokemon-grid" class="grid-container"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
