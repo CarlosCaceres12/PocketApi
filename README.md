@@ -1,12 +1,9 @@
 # Pokédex Pro v2.0 🔴⚪
 
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](TU_ENLACE_DE_VERCEL_AQUI)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](TU_ENLACE_DE_GITHUB_AQUI)
-
 ## 👤 Información del Proyecto
 * **Trainer:** Cristian David Díaz Tovar
 * **Materia:** Desarrollo de Software
-* **Institución:** [Nombre de tu Institución]
+* **Institución:** [Campuslands]
 * **Objetivo:** Aplicación web de alto rendimiento para la visualización y análisis de los 151 Pokémon de la región de Kanto, utilizando la [PokeAPI](https://pokeapi.co/).
 
 ---
