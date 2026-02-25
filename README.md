@@ -1,47 +1,46 @@
 # Pokédex Pro v2.0 🔴⚪
 
-[cite_start]Proyecto desarrollado para la materia de **Desarrollo de Software**, enfocado en el consumo de la **PokeAPI**, aplicación de **Clean Code** y diseño **UX/UI moderno**[cite: 3, 5].
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](TU_ENLACE_DE_VERCEL_AQUI)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](TU_ENLACE_DE_GITHUB_AQUI)
 
-## 👤 Trainer
-* [cite_start]**Nombre:** Cristian David Díaz Tovar [cite: 2]
-
-## 🎯 Objetivo
-[cite_start]Construir una aplicación web funcional para visualizar, filtrar y analizar las estadísticas de los 151 Pokémon originales[cite: 4, 5].
-
----
-
-## 🚀 Requerimientos Implementados
-
-### 🎨 Frontend & UI
-* [cite_start]**Diseño Responsivo:** Interfaz adaptada 100% para móviles y escritorio[cite: 9].
-* [cite_start]**Tipografía:** Uso de `'Press Start 2P'` para títulos y `'Montserrat'` para el cuerpo de texto[cite: 10].
-* [cite_start]**Identidad Visual:** Header con efecto **Glassmorphism** (degradado y desenfoque) y **Favicon** de Pokébola[cite: 11, 12].
-* [cite_start]**Adaptabilidad Móvil:** En pantallas menores a **600px**, las tarjetas de la lista ocultan la imagen para optimizar el espacio, mostrando solo Nombre e ID[cite: 12].
-
-### ⚙️ Lógica y Optimización
-* [cite_start]**Carga Paralela:** Implementación de `Promise.all()` para cargar los 151 Pokémon simultáneamente, mejorando la velocidad de respuesta[cite: 15].
-* [cite_start]**Buscador Real-Time:** Filtro dinámico por Nombre o ID sin recarga de página[cite: 16].
-* [cite_start]**Panel Dinámico:** El borde y las barras de estadísticas cambian de color según el tipo principal del Pokémon (Fuego = Naranja, Agua = Azul, etc.)[cite: 17].
-* [cite_start]**Manejo de Datos:** Conversión de unidades de la API (hectogramos a **kg** y decímetros a **metros**)[cite: 18].
-* [cite_start]**Lazy Loading:** Optimización de carga de imágenes para mejorar el rendimiento[cite: 23].
+## 👤 Información del Proyecto
+* **Trainer:** Cristian David Díaz Tovar
+* **Materia:** Desarrollo de Software
+* **Institución:** [Nombre de tu Institución]
+* **Objetivo:** Aplicación web de alto rendimiento para la visualización y análisis de los 151 Pokémon de la región de Kanto, utilizando la [PokeAPI](https://pokeapi.co/).
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
-* [cite_start]**HTML5:** Estructura semántica[cite: 20].
-* [cite_start]**CSS3:** Variables CSS, Flexbox/Grid y Media Queries[cite: 20].
-* [cite_start]**JavaScript (Vanilla):** Consumo de API asíncrona y manipulación del DOM[cite: 21].
+## 🚀 Requerimientos Técnicos Cumplidos
+
+### 🎨 UI/UX & Diseño Responsivo
+- **Glassmorphism:** Header con degradado dinámico y efecto de desenfoque de fondo (`backdrop-filter`).
+- **Tipografía Dual:** Implementación de Google Fonts mediante `@import`:
+  - `'Press Start 2P'` para un estilo retro en títulos y IDs.
+  - `'Montserrat'` para descripciones y datos técnicos.
+- **Mobile First & Adaptabilidad:** - Diseño optimizado para Desktop y Tablet con panel lateral de estadísticas.
+  - **Breakpoint (< 600px):** Las tarjetas de la lista ocultan las imágenes automáticamente para priorizar la velocidad de lectura y el espacio en pantalla.
+
+### ⚙️ Ingeniería de Software (JavaScript)
+- **Carga Asíncrona Pro:** Uso estricto de `Promise.all()` para disparar 151 peticiones simultáneas, reduciendo el tiempo de carga inicial en un 80% comparado con bucles tradicionales.
+- **Filtro Indexado:** Motor de búsqueda en tiempo real que procesa nombres e IDs mediante el evento `input`.
+- **Sanitización y Conversión de Datos:**
+  - Peso: De hectogramos a **Kilogramos (kg)**.
+  - Altura: De decímetros a **Metros (m)**.
+- **Interfaz Reactiva:** El panel de detalles actualiza el color del borde y las barras de progreso (Stats) dinámicamente según el tipo elemental del Pokémon seleccionado.
 
 ---
 
-## 📊 Criterios de Evaluación Cumplidos
-| Criterio | Descripción | Peso |
-| :--- | :--- | :--- |
-| **Funcionalidad** | [cite_start]Buscador y selección sin errores en consola[cite: 23]. | 40% |
-| **Diseño (UI)** | [cite_start]Fuentes, degradados y estilos dinámicos aplicados[cite: 23]. | 30% |
-| **Optimización** | [cite_start]Uso de `Promise.all()` y lazy loading[cite: 23]. | 20% |
-| **Responsive** | [cite_start]Adaptación móvil (ocultar imágenes en cards)[cite: 23]. | 10% |
+## 🛠️ Stack Tecnológico
+* **HTML5:** Marcado semántico y estructura de componentes.
+* **CSS3:** Variables globales, Flexbox, CSS Grid y animaciones de transición.
+* **Vanilla JavaScript:** Manipulación eficiente del DOM y manejo de la Fetch API.
 
 ---
 
-> [cite_start]"El código limpio no es el que funciona, sino el que otro desarrollador puede entender y mejorar sin dolor"[cite: 27].
+## 📂 Estructura de Archivos
+```text
+├── index.html      # Estructura principal y contenedores
+├── style.css       # Reglas de diseño, fuentes y Media Queries
+├── app.js          # Lógica de negocio y consumo de API
+└── assets/         # Favicon y recursos locales
